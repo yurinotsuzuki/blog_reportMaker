@@ -1,0 +1,274 @@
+
+
+body{
+  height: auto;
+  background: #fbfbfa;
+}
+#main{
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+  height: 100%;
+  width: 450px;
+}
+
+
+/*トップバナー*/
+#top-baner{
+  width: 100%;
+}
+
+h1{
+  margin: 5px;
+  color: #545454;
+  font-size: 20px;
+	line-height: 20px;
+  text-align:center;
+  }
+form{
+  overflow: hidden;
+}
+
+input[type="text"]{
+  color: #545454;
+  display: block;
+  margin: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+input[type="submit"]{
+  display: inline-block;
+  color: #ffffff;
+  background: orangered;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+input[type="submit"]:hover{
+  background: #fff;
+  color: orangered;
+}
+
+
+.form_submit{
+  text-align: center;
+}
+
+button{
+  border: none;
+  padding: 15px 30px;
+  margin: 5px;
+  margin-bottom: 15px;
+  background: #3d3938;
+  color: white;
+  font-size: 15px;
+}
+button{
+  background: #111;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 5px;
+}
+
+a{
+  color: #545454;
+  display: block;
+}
+a:hover{
+  text-decoration: none;
+}
+.err_msg{
+  color: #ff4d4b;
+  font:12px system-ui;
+}
+
+
+/* プルダウンデザイン ----------------------------- */
+
+#form_buLesson{
+  width: 90%;
+	margin: auto;
+}
+
+.cp_ipselect {
+	overflow: hidden;
+	width: 100%;
+	margin: 6px auto;
+	text-align: center;
+}
+.cp_ipselect select {
+  font-size: 13px;
+	width: 100%;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl02 {
+	position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 2px;
+	background: #ffffff;
+}
+.cp_ipselect.cp_sl02::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+.cp_ipselect.cp_sl02:after {
+	position: absolute;
+	top: 0;
+	right: 2.5em;
+	bottom: 0;
+	width: 1px;
+	content: '';
+	border-left: 1px solid #bbbbbb;
+}
+.cp_ipselect.cp_sl02 select {
+	padding: 8px 38px 8px 8px;
+	color: #666666;
+}
+
+/* checkboxのデザイン ---------------------------------- */
+input[type=checkbox] {
+	display: none;
+  margin: auto;
+}
+input[type="checkbox"].checkbox02 + label {
+  margin: auto;
+}
+input[type="checkbox"].checkbox02:checked + label {
+	background: #555;
+	color: #ffffff;
+  margin: auto;
+}
+.check_label:hover {
+	background-color: #ccc;/* 薄い赤*/
+}
+.check_label {
+	display: block;
+	width: 50%;
+	text-align: center;
+	line-height: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	color: #333;/* 濃い */
+	border: 1px solid #555;/* 濃い */
+	border-radius: 5px;
+  font:15px system-ui;
+}
+
+
+
+/* テキストboxのデザイン ---------------------------------- */
+#days_error{
+  height: auto;
+  overflow:hidden
+}
+#form_days{
+  margin: auto;
+	width: 80%;
+	height: auto;
+  overflow:hidden
+}
+.cp_iptxt {
+	position: relative;
+  top: 13px;
+	width: 30%;
+	margin: 5px;
+  float: left;
+}
+
+.cp_iptxt input[type='text'] {
+	font: 12px/12px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+	padding-left: 20px;
+}
+
+.cp_iptxt input[type='text']:focus {
+	outline: none;
+}
+
+.ef {
+	padding: 4px 0;
+	border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+.ef ~ .focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: #da3c41;
+}
+.ef:focus ~ .focus_line,
+.cp_iptxt.ef ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.ef ~ label {
+	font: 12px/12px sans-serif;
+	position: absolute;
+	z-index: -1;
+	top: -6px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;/* グレー */
+}
+.ef:focus ~ label, .cp_iptxt.ef ~ label {
+	font-size: 15px;
+	top: -8px;
+	transition: 0.3s;
+	color: #555;/* グレー */
+}
+#tani {
+	font-size: 15px;/* グレー */
+	color: #555;/* グレー */
+  text-align: right;
+	top: 15px;
+}
+
+/* フォーム背景色(disabled) */
+.bg_disabled{
+    background-color: #ccc;
+}
+
+/* 表示・非表示 */
+.hide {
+  display: none;
+}
+/* スマホ用 */
+@media only screen and (max-device-width: 480px) {
+  #main{
+    width: 100%;
+  }
+}
